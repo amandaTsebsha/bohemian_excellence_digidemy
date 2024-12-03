@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohemian Excellence DigiDemy</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bohemian Excellence DigiDemy</h1>
+        <nav>
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/about}">About Us</a>
+            <a th:href="@{/services}">Services</a>
+            <a th:href="@{/courses}">Courses</a>
+            <a th:href="@{/contact}">Contact</a>
+            <a th:href="@{/investors}">Investor Relations</a>
+        </nav>
+    </header>
+    <main>
+        <section th:replace="~{::content}" />
+    </main>
+    <footer>
+        <p>&copy; 2024 Bohemian Excellence DigiDemy</p>
+    </footer>
+</body>
+</html>
